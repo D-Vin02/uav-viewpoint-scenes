@@ -1,0 +1,1 @@
+"""Synthetic viewpoint graph generation."""

@@ -1,0 +1,7 @@
+{
+  "train_count": 100,
+  "validation_count": 20,
+  "test_count": 30,
+  "master_seed": 20260914,
+  "max_team_size": 4
+}

@@ -1,0 +1,5144 @@
+{
+  "schema_version": 1,
+  "master_seed": 20260914,
+  "fixed_dimensions": {
+    "num_viewpoints": 32,
+    "num_samples": 80
+  },
+  "max_team_size": 4,
+  "difficulty_profiles": {
+    "easy": {
+      "area_width": 18.0,
+      "area_height": 18.0,
+      "connection_radius": 6.0,
+      "extra_k_nearest": 3,
+      "min_base_degree": 4
+    },
+    "medium": {
+      "area_width": 20.0,
+      "area_height": 20.0,
+      "connection_radius": 5.0,
+      "extra_k_nearest": 2,
+      "min_base_degree": 4
+    },
+    "hard": {
+      "area_width": 22.0,
+      "area_height": 22.0,
+      "connection_radius": 4.25,
+      "extra_k_nearest": 1,
+      "min_base_degree": 4
+    }
+  },
+  "policy": {
+    "train_and_validation_may_be_used_for_development": true,
+    "test_is_frozen_and_must_not_be_used_for_tuning": true
+  },
+  "splits": {
+    "train": [
+      {
+        "scene_id": 0,
+        "generator_seed": 20260914,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_0.json",
+        "sha256": "2796ddad651309fae7ead0465818c3702fb658ed8b3fd528d48103b561d4bb78",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260914
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 153,
+          "graph_density": 0.3084677419354839,
+          "mean_degree": 9.5625,
+          "min_degree": 3,
+          "max_degree": 16,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.1391129032258065,
+          "max_base_distance": 25.211185809360384,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 1,
+        "generator_seed": 20260915,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_1.json",
+        "sha256": "2ef3b2e73ea38b6e68efdb284e6fe40bd46e0cc9b7790a71099492bb00a51a8e",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260915
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 77,
+          "graph_density": 0.15524193548387097,
+          "mean_degree": 4.8125,
+          "min_degree": 2,
+          "max_degree": 8,
+          "diameter_hops": 7,
+          "mean_shortest_path_hops": 3.247983870967742,
+          "max_base_distance": 26.60147346305918,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 2,
+        "generator_seed": 20260916,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_2.json",
+        "sha256": "6c16c8122146139fc8a126ba7ab4b747b4804179c3c2431d9dee272577e353ba",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260916
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 59,
+          "graph_density": 0.11895161290322581,
+          "mean_degree": 3.6875,
+          "min_degree": 1,
+          "max_degree": 6,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.8266129032258065,
+          "max_base_distance": 25.689003613460713,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 3,
+        "generator_seed": 20260917,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_3.json",
+        "sha256": "827d246a970775c2daf092147ffce610210e9cf5093c6665bff1f8ce2a0421d9",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260917
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 95,
+          "graph_density": 0.19153225806451613,
+          "mean_degree": 5.9375,
+          "min_degree": 3,
+          "max_degree": 10,
+          "diameter_hops": 6,
+          "mean_shortest_path_hops": 2.681451612903226,
+          "max_base_distance": 24.91344978769863,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 4,
+        "generator_seed": 20260918,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_4.json",
+        "sha256": "f2abcf6e4f971b1c22953b0838036dc2cccdabe58024ccab951f0aa5ca4cb5d6",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260918
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 92,
+          "graph_density": 0.18548387096774194,
+          "mean_degree": 5.75,
+          "min_degree": 2,
+          "max_degree": 10,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.586693548387097,
+          "max_base_distance": 29.75642102842653,
+          "base_degree": 5
+        }
+      },
+      {
+        "scene_id": 5,
+        "generator_seed": 20260919,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_5.json",
+        "sha256": "26c817d19f519e0177e335b62673e94467d18d84c791f6628fba89f3aa0cb096",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260919
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 59,
+          "graph_density": 0.11895161290322581,
+          "mean_degree": 3.6875,
+          "min_degree": 1,
+          "max_degree": 8,
+          "diameter_hops": 10,
+          "mean_shortest_path_hops": 4.26008064516129,
+          "max_base_distance": 35.822097163205115,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 6,
+        "generator_seed": 20260920,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_6.json",
+        "sha256": "6a57b255e9bd53560e73a5e9c96481cc9cfb77674b9846e82efc6f77ce430c99",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260920
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 106,
+          "graph_density": 0.21370967741935484,
+          "mean_degree": 6.625,
+          "min_degree": 3,
+          "max_degree": 11,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.5725806451612905,
+          "max_base_distance": 23.493988964443304,
+          "base_degree": 6
+        }
+      },
+      {
+        "scene_id": 7,
+        "generator_seed": 20260921,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_7.json",
+        "sha256": "1a37d694bdb2160d2d821984a4d96a245ea929fe3b5ce6b2364b29a6b879e8d4",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260921
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 76,
+          "graph_density": 0.1532258064516129,
+          "mean_degree": 4.75,
+          "min_degree": 2,
+          "max_degree": 9,
+          "diameter_hops": 11,
+          "mean_shortest_path_hops": 4.536290322580645,
+          "max_base_distance": 24.6301293264039,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 8,
+        "generator_seed": 20260922,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_8.json",
+        "sha256": "085980e75cd8c2a32b3094dde9570b86d16a811c72f7ff1ac2ca5f206dc97ca8",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260922
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 52,
+          "graph_density": 0.10483870967741936,
+          "mean_degree": 3.25,
+          "min_degree": 1,
+          "max_degree": 6,
+          "diameter_hops": 12,
+          "mean_shortest_path_hops": 5.292338709677419,
+          "max_base_distance": 37.65162361139654,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 9,
+        "generator_seed": 20260923,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_9.json",
+        "sha256": "cc2becfa8854aaefef6f237e93e4fe7e81d2dfa81bc5bc7c41262fd8963c76e5",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260923
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 130,
+          "graph_density": 0.2620967741935484,
+          "mean_degree": 8.125,
+          "min_degree": 3,
+          "max_degree": 13,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.314516129032258,
+          "max_base_distance": 21.82605478230389,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 10,
+        "generator_seed": 20260924,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_10.json",
+        "sha256": "6eaafe1f21a54457f4dd426f58c264d97a67f53b57f11396623e792c7dbfdfbc",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260924
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 83,
+          "graph_density": 0.16733870967741934,
+          "mean_degree": 5.1875,
+          "min_degree": 2,
+          "max_degree": 8,
+          "diameter_hops": 11,
+          "mean_shortest_path_hops": 3.941532258064516,
+          "max_base_distance": 38.6222951958371,
+          "base_degree": 5
+        }
+      },
+      {
+        "scene_id": 11,
+        "generator_seed": 20260925,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_11.json",
+        "sha256": "93bdf67e59162f9970354bd8c863f1cfaccf9eff8ae93d75cebfca25d09bf9ec",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260925
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 47,
+          "graph_density": 0.09475806451612903,
+          "mean_degree": 2.9375,
+          "min_degree": 1,
+          "max_degree": 4,
+          "diameter_hops": 19,
+          "mean_shortest_path_hops": 6.538306451612903,
+          "max_base_distance": 35.589013230350425,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 12,
+        "generator_seed": 20260926,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_12.json",
+        "sha256": "bf73f4e30bcc68c6902abea9fa2627c771e23f566b91521f3ff4b37b260f15cc",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260926
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 117,
+          "graph_density": 0.23588709677419356,
+          "mean_degree": 7.3125,
+          "min_degree": 3,
+          "max_degree": 12,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.4818548387096775,
+          "max_base_distance": 23.15441073077793,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 13,
+        "generator_seed": 20260927,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_13.json",
+        "sha256": "de4ed8b71a8aac7c145d59285562cb1c1665a8160ac3c4b4cce504b87a775101",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260927
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 81,
+          "graph_density": 0.16330645161290322,
+          "mean_degree": 5.0625,
+          "min_degree": 2,
+          "max_degree": 9,
+          "diameter_hops": 7,
+          "mean_shortest_path_hops": 3.183467741935484,
+          "max_base_distance": 29.830432401018694,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 14,
+        "generator_seed": 20260928,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_14.json",
+        "sha256": "2787fa7a187769b414dd7c6e3a7bf01b45e82c35bb747da168571c2dab270bba",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260928
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 46,
+          "graph_density": 0.09274193548387097,
+          "mean_degree": 2.875,
+          "min_degree": 1,
+          "max_degree": 5,
+          "diameter_hops": 13,
+          "mean_shortest_path_hops": 5.217741935483871,
+          "max_base_distance": 39.38106931315565,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 15,
+        "generator_seed": 20260929,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_15.json",
+        "sha256": "a3279d74ff7ea39764b41dcc6e06920eb834a6eeb38c267f2995c1ba79ca06c0",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260929
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 134,
+          "graph_density": 0.2701612903225806,
+          "mean_degree": 8.375,
+          "min_degree": 3,
+          "max_degree": 13,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.3306451612903225,
+          "max_base_distance": 20.901919351961425,
+          "base_degree": 8
+        }
+      },
+      {
+        "scene_id": 16,
+        "generator_seed": 20260930,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_16.json",
+        "sha256": "561c335c2fdbb533868fabe554b881dd0acc57469072d3574a1fa9f41e212d77",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260930
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 80,
+          "graph_density": 0.16129032258064516,
+          "mean_degree": 5.0,
+          "min_degree": 2,
+          "max_degree": 9,
+          "diameter_hops": 6,
+          "mean_shortest_path_hops": 3.006048387096774,
+          "max_base_distance": 26.660093401015907,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 17,
+        "generator_seed": 20260931,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_17.json",
+        "sha256": "12c3c23d54c787218f9d2223ca5ec37b18da36004b2c1c1ac766ce7c845641fc",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260931
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 60,
+          "graph_density": 0.12096774193548387,
+          "mean_degree": 3.75,
+          "min_degree": 1,
+          "max_degree": 8,
+          "diameter_hops": 12,
+          "mean_shortest_path_hops": 4.778225806451613,
+          "max_base_distance": 41.77674571249486,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 18,
+        "generator_seed": 20260932,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_18.json",
+        "sha256": "aa43d22c28c6bdc1b1617246c9e34a67f1f761400b2b285ef89bb0380b4a7d6c",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260932
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 123,
+          "graph_density": 0.24798387096774194,
+          "mean_degree": 7.6875,
+          "min_degree": 3,
+          "max_degree": 12,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.5403225806451615,
+          "max_base_distance": 23.746896177113218,
+          "base_degree": 8
+        }
+      },
+      {
+        "scene_id": 19,
+        "generator_seed": 20260933,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_19.json",
+        "sha256": "264c9887f21922d45f734ab53d521e17a7787afc311cf2d64eb421b6e727b2ef",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260933
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 71,
+          "graph_density": 0.1431451612903226,
+          "mean_degree": 4.4375,
+          "min_degree": 2,
+          "max_degree": 7,
+          "diameter_hops": 11,
+          "mean_shortest_path_hops": 3.9455645161290325,
+          "max_base_distance": 26.319602700399198,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 20,
+        "generator_seed": 20260934,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_20.json",
+        "sha256": "ca70c8ec6c5992e7e50472611f28d54609d65691470d23dd42c7834154d19c9e",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260934
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 58,
+          "graph_density": 0.11693548387096774,
+          "mean_degree": 3.625,
+          "min_degree": 1,
+          "max_degree": 6,
+          "diameter_hops": 15,
+          "mean_shortest_path_hops": 5.189516129032258,
+          "max_base_distance": 45.189905963986085,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 21,
+        "generator_seed": 20260935,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_21.json",
+        "sha256": "f24b6db291fd50a1d0f23ed22422baa64661af1ea336a152c23a7b9646ac711c",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260935
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 114,
+          "graph_density": 0.22983870967741934,
+          "mean_degree": 7.125,
+          "min_degree": 3,
+          "max_degree": 13,
+          "diameter_hops": 6,
+          "mean_shortest_path_hops": 2.530241935483871,
+          "max_base_distance": 23.18475801038364,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 22,
+        "generator_seed": 20260936,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_22.json",
+        "sha256": "907df1863e3c1e0eea5de35882f185c370d3f0c835ce4b778688064fa20c512b",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260936
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 85,
+          "graph_density": 0.17137096774193547,
+          "mean_degree": 5.3125,
+          "min_degree": 2,
+          "max_degree": 12,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.598790322580645,
+          "max_base_distance": 27.56391930623287,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 23,
+        "generator_seed": 20260937,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_23.json",
+        "sha256": "86822f190117cf4aa8a49dffd1aed4e09c7bc438e02e217cd7a43a1781876882",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260937
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 60,
+          "graph_density": 0.12096774193548387,
+          "mean_degree": 3.75,
+          "min_degree": 1,
+          "max_degree": 8,
+          "diameter_hops": 9,
+          "mean_shortest_path_hops": 3.933467741935484,
+          "max_base_distance": 34.778060199878475,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 24,
+        "generator_seed": 20260938,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_24.json",
+        "sha256": "4212a6e23f5f6437a74f78104d58d110010b25cc5c5350da46b9928301c91495",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260938
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 116,
+          "graph_density": 0.23387096774193547,
+          "mean_degree": 7.25,
+          "min_degree": 3,
+          "max_degree": 13,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.506048387096774,
+          "max_base_distance": 21.969055881075874,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 25,
+        "generator_seed": 20260939,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_25.json",
+        "sha256": "948139bbe181ddc97bca121964b2f4b86645f1d74081c1e38ecd5310dcf8d16f",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260939
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 83,
+          "graph_density": 0.16733870967741934,
+          "mean_degree": 5.1875,
+          "min_degree": 2,
+          "max_degree": 10,
+          "diameter_hops": 10,
+          "mean_shortest_path_hops": 3.963709677419355,
+          "max_base_distance": 34.883327588498645,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 26,
+        "generator_seed": 20260940,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_26.json",
+        "sha256": "5cf869cf27f7be3e240facadcecc0084a675d57caa8e5f7811dc8d58c1227cc4",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260940
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 59,
+          "graph_density": 0.11895161290322581,
+          "mean_degree": 3.6875,
+          "min_degree": 1,
+          "max_degree": 7,
+          "diameter_hops": 11,
+          "mean_shortest_path_hops": 4.689516129032258,
+          "max_base_distance": 33.44539522906262,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 27,
+        "generator_seed": 20260941,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_27.json",
+        "sha256": "e8ab7bc0b4e9d63fc0d6f16258fdb19a257ba83f8b202165b77706831db074f0",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260941
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 108,
+          "graph_density": 0.21774193548387097,
+          "mean_degree": 6.75,
+          "min_degree": 3,
+          "max_degree": 11,
+          "diameter_hops": 6,
+          "mean_shortest_path_hops": 2.7600806451612905,
+          "max_base_distance": 24.76782899921076,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 28,
+        "generator_seed": 20260942,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_28.json",
+        "sha256": "0f8073ad4174bd37722f4c84183e3a2f387849742ff193e63955595c2c0d0689",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260942
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 64,
+          "graph_density": 0.12903225806451613,
+          "mean_degree": 4.0,
+          "min_degree": 2,
+          "max_degree": 9,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.6774193548387095,
+          "max_base_distance": 27.53422289909809,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 29,
+        "generator_seed": 20260943,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_29.json",
+        "sha256": "cb6be1d8382049d94c23330cbe93d9517f51b612562f66a1f1071aea006e86ce",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260943
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 47,
+          "graph_density": 0.09475806451612903,
+          "mean_degree": 2.9375,
+          "min_degree": 1,
+          "max_degree": 5,
+          "diameter_hops": 13,
+          "mean_shortest_path_hops": 5.213709677419355,
+          "max_base_distance": 45.91015251735914,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 30,
+        "generator_seed": 20260944,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_30.json",
+        "sha256": "fda56c6d4a80f815a013e2d7231dd36bf474d670ff721ebccd995e8a716f7c9a",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260944
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 127,
+          "graph_density": 0.2560483870967742,
+          "mean_degree": 7.9375,
+          "min_degree": 3,
+          "max_degree": 12,
+          "diameter_hops": 7,
+          "mean_shortest_path_hops": 2.913306451612903,
+          "max_base_distance": 22.135704361335346,
+          "base_degree": 5
+        }
+      },
+      {
+        "scene_id": 31,
+        "generator_seed": 20260945,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_31.json",
+        "sha256": "f1c83c9fc1ddb81aacc694fbd52706628774d75016b24689abe0ca2675de4665",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260945
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 88,
+          "graph_density": 0.1774193548387097,
+          "mean_degree": 5.5,
+          "min_degree": 2,
+          "max_degree": 10,
+          "diameter_hops": 7,
+          "mean_shortest_path_hops": 2.9798387096774195,
+          "max_base_distance": 28.397081267631084,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 32,
+        "generator_seed": 20260946,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_32.json",
+        "sha256": "b0fa2edf2cb695f887350711d7cc1de33e1c822752fa2cb717ca5d3b8fd73d63",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260946
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 56,
+          "graph_density": 0.11290322580645161,
+          "mean_degree": 3.5,
+          "min_degree": 1,
+          "max_degree": 6,
+          "diameter_hops": 12,
+          "mean_shortest_path_hops": 4.826612903225806,
+          "max_base_distance": 32.86455617047903,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 33,
+        "generator_seed": 20260947,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_33.json",
+        "sha256": "17fb94f7c9b9822354d278563c6153173a4e0c7c561d31c88ccc2348c11f2222",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260947
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 133,
+          "graph_density": 0.26814516129032256,
+          "mean_degree": 8.3125,
+          "min_degree": 3,
+          "max_degree": 14,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.2056451612903225,
+          "max_base_distance": 23.670893747554274,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 34,
+        "generator_seed": 20260948,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_34.json",
+        "sha256": "f4bbf583d663f5ff2657366770990b4c22f1c204199045d876e8836e6b818653",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260948
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 62,
+          "graph_density": 0.125,
+          "mean_degree": 3.875,
+          "min_degree": 2,
+          "max_degree": 6,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.814516129032258,
+          "max_base_distance": 30.24819339598774,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 35,
+        "generator_seed": 20260949,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_35.json",
+        "sha256": "59c7e3aeded31272f028f502c8cacbfbe6608f9322f1227dbf5350adfe41f76a",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260949
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 51,
+          "graph_density": 0.1028225806451613,
+          "mean_degree": 3.1875,
+          "min_degree": 1,
+          "max_degree": 7,
+          "diameter_hops": 11,
+          "mean_shortest_path_hops": 4.88508064516129,
+          "max_base_distance": 44.72751916070519,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 36,
+        "generator_seed": 20260950,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_36.json",
+        "sha256": "6350d88f11559c62bd12b70e75f1df318acbf8c23efd3c773c471b1c921637fb",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260950
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 126,
+          "graph_density": 0.2540322580645161,
+          "mean_degree": 7.875,
+          "min_degree": 3,
+          "max_degree": 13,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.314516129032258,
+          "max_base_distance": 19.687720441171955,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 37,
+        "generator_seed": 20260951,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_37.json",
+        "sha256": "aff7e9c30967227a998c9efa147d82957480be8b7058cd2ca71a71ec3c7c7b40",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260951
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 78,
+          "graph_density": 0.15725806451612903,
+          "mean_degree": 4.875,
+          "min_degree": 2,
+          "max_degree": 9,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.370967741935484,
+          "max_base_distance": 30.80336403728121,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 38,
+        "generator_seed": 20260952,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_38.json",
+        "sha256": "3b22555c1fd30da6a26de6c04d4b25da9213c8af822d453d88977d696337458a",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260952
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 54,
+          "graph_density": 0.10887096774193548,
+          "mean_degree": 3.375,
+          "min_degree": 1,
+          "max_degree": 9,
+          "diameter_hops": 12,
+          "mean_shortest_path_hops": 4.48991935483871,
+          "max_base_distance": 33.86955338504666,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 39,
+        "generator_seed": 20260953,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_39.json",
+        "sha256": "05aa27d98eec22008349630a4bf3dc9ae41bb24c6c5dd852f5c5a2ab6ba44858",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260953
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 121,
+          "graph_density": 0.2439516129032258,
+          "mean_degree": 7.5625,
+          "min_degree": 4,
+          "max_degree": 11,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.368951612903226,
+          "max_base_distance": 20.811242769009148,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 40,
+        "generator_seed": 20260954,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_40.json",
+        "sha256": "9182ee942053d8b9ceaa15f349e854914f70e303c9564b76f06cfc264c6273c9",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260954
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 74,
+          "graph_density": 0.14919354838709678,
+          "mean_degree": 4.625,
+          "min_degree": 2,
+          "max_degree": 7,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.6028225806451615,
+          "max_base_distance": 30.95191567748476,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 41,
+        "generator_seed": 20260955,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_41.json",
+        "sha256": "dfbdf8e97703cc6fdc8879c630e07fc9710df986384e87c85e63346dbaeb99c5",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260955
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 62,
+          "graph_density": 0.125,
+          "mean_degree": 3.875,
+          "min_degree": 1,
+          "max_degree": 8,
+          "diameter_hops": 11,
+          "mean_shortest_path_hops": 4.409274193548387,
+          "max_base_distance": 41.26591986077205,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 42,
+        "generator_seed": 20260956,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_42.json",
+        "sha256": "253ce250582079a49b27c350f5acb67557bd8de46cbcafade416e640cffc9ca4",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260956
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 114,
+          "graph_density": 0.22983870967741934,
+          "mean_degree": 7.125,
+          "min_degree": 3,
+          "max_degree": 13,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.524193548387097,
+          "max_base_distance": 24.701515696102884,
+          "base_degree": 6
+        }
+      },
+      {
+        "scene_id": 43,
+        "generator_seed": 20260957,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_43.json",
+        "sha256": "56444e426584801778ec3f2fee979965488e0878d1d3f3f8fbb0aa777d8d829b",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260957
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 83,
+          "graph_density": 0.16733870967741934,
+          "mean_degree": 5.1875,
+          "min_degree": 2,
+          "max_degree": 9,
+          "diameter_hops": 7,
+          "mean_shortest_path_hops": 3.433467741935484,
+          "max_base_distance": 27.38347518322645,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 44,
+        "generator_seed": 20260958,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_44.json",
+        "sha256": "4fbc22092e978add2f0737ef6df17a641772d94e2392ed284432bce32be3aa24",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260958
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 42,
+          "graph_density": 0.0846774193548387,
+          "mean_degree": 2.625,
+          "min_degree": 1,
+          "max_degree": 5,
+          "diameter_hops": 18,
+          "mean_shortest_path_hops": 6.808467741935484,
+          "max_base_distance": 43.657534530043655,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 45,
+        "generator_seed": 20260959,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_45.json",
+        "sha256": "7b0e1c79d39b5e54cf5d21bc18d2215b9de3cd3d0bb0e3e22385e0fc15648b53",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260959
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 126,
+          "graph_density": 0.2540322580645161,
+          "mean_degree": 7.875,
+          "min_degree": 3,
+          "max_degree": 12,
+          "diameter_hops": 7,
+          "mean_shortest_path_hops": 3.120967741935484,
+          "max_base_distance": 36.466644241787996,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 46,
+        "generator_seed": 20260960,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_46.json",
+        "sha256": "7510ef103090e9870e557f44e8bd561c99c92838d8b94801df0b4443a5a6106e",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260960
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 79,
+          "graph_density": 0.1592741935483871,
+          "mean_degree": 4.9375,
+          "min_degree": 2,
+          "max_degree": 9,
+          "diameter_hops": 7,
+          "mean_shortest_path_hops": 3.0403225806451615,
+          "max_base_distance": 24.67519877203905,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 47,
+        "generator_seed": 20260961,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_47.json",
+        "sha256": "546dbfe8a529c678079a8910b1eeaf22d8b3830deb160c1fd04c0452b9af89d5",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260961
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 50,
+          "graph_density": 0.10080645161290322,
+          "mean_degree": 3.125,
+          "min_degree": 1,
+          "max_degree": 6,
+          "diameter_hops": 13,
+          "mean_shortest_path_hops": 5.36491935483871,
+          "max_base_distance": 43.25811683269145,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 48,
+        "generator_seed": 20260962,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_48.json",
+        "sha256": "d7d67c9b3e8fdb29d362124826d3d1fa3966351bb7208e87a68cf070a3d8d0d8",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260962
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 119,
+          "graph_density": 0.2399193548387097,
+          "mean_degree": 7.4375,
+          "min_degree": 3,
+          "max_degree": 12,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.3608870967741935,
+          "max_base_distance": 21.318289134283376,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 49,
+        "generator_seed": 20260963,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_49.json",
+        "sha256": "7df36c6cbf2d0aac5ba03f878f96ee7f871250a9671d2da24ff9f3eddf9ee794",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260963
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 78,
+          "graph_density": 0.15725806451612903,
+          "mean_degree": 4.875,
+          "min_degree": 2,
+          "max_degree": 9,
+          "diameter_hops": 12,
+          "mean_shortest_path_hops": 4.354838709677419,
+          "max_base_distance": 46.51835412203086,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 50,
+        "generator_seed": 20260964,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_50.json",
+        "sha256": "d806161371b331192d89d0110bb77d2191a4e216cd47f28b07a441842c2b978d",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260964
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 74,
+          "graph_density": 0.14919354838709678,
+          "mean_degree": 4.625,
+          "min_degree": 1,
+          "max_degree": 12,
+          "diameter_hops": 11,
+          "mean_shortest_path_hops": 3.782258064516129,
+          "max_base_distance": 24.383524337057253,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 51,
+        "generator_seed": 20260965,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_51.json",
+        "sha256": "31782b4a4a03cc800f7d1dc7f3536c692a8af336999fbce8658f28d65e05035c",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260965
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 118,
+          "graph_density": 0.23790322580645162,
+          "mean_degree": 7.375,
+          "min_degree": 3,
+          "max_degree": 12,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.596774193548387,
+          "max_base_distance": 24.159571003137245,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 52,
+        "generator_seed": 20260966,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_52.json",
+        "sha256": "83c6baf130984137324e35eaa536f85f1a623cab814bb0d5ff498e793c299f2c",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260966
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 91,
+          "graph_density": 0.18346774193548387,
+          "mean_degree": 5.6875,
+          "min_degree": 2,
+          "max_degree": 11,
+          "diameter_hops": 6,
+          "mean_shortest_path_hops": 2.9173387096774195,
+          "max_base_distance": 27.227849504708473,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 53,
+        "generator_seed": 20260967,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_53.json",
+        "sha256": "9daa70df1fcb710c68df0aa1aab61c8d2a33b600566880b01ae6a04b2e4daf2a",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260967
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 65,
+          "graph_density": 0.1310483870967742,
+          "mean_degree": 4.0625,
+          "min_degree": 1,
+          "max_degree": 7,
+          "diameter_hops": 9,
+          "mean_shortest_path_hops": 4.074596774193548,
+          "max_base_distance": 37.252919000378625,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 54,
+        "generator_seed": 20260968,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_54.json",
+        "sha256": "fe606a987ad17eb0c38c0b1dc3445b2db262abd2d4bcdf46b9ec0cdd279812da",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260968
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 123,
+          "graph_density": 0.24798387096774194,
+          "mean_degree": 7.6875,
+          "min_degree": 3,
+          "max_degree": 14,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.443548387096774,
+          "max_base_distance": 22.856321731740604,
+          "base_degree": 5
+        }
+      },
+      {
+        "scene_id": 55,
+        "generator_seed": 20260969,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_55.json",
+        "sha256": "9b21e13d063e36b370886edde737f9eade04ad205426c01938fc6e08eb12d802",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260969
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 99,
+          "graph_density": 0.19959677419354838,
+          "mean_degree": 6.1875,
+          "min_degree": 2,
+          "max_degree": 11,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.2923387096774195,
+          "max_base_distance": 32.40393331946373,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 56,
+        "generator_seed": 20260970,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_56.json",
+        "sha256": "d3178014d875ab8551447a00f0f4558cc1f4553fefede89d6e4504b3f56540ec",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260970
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 46,
+          "graph_density": 0.09274193548387097,
+          "mean_degree": 2.875,
+          "min_degree": 1,
+          "max_degree": 5,
+          "diameter_hops": 11,
+          "mean_shortest_path_hops": 4.75,
+          "max_base_distance": 41.449374189592326,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 57,
+        "generator_seed": 20260971,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_57.json",
+        "sha256": "4ddaf916ee10a759c70a3629a457d1a05b0b4a9f63689be61525ec6f3866fe23",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260971
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 122,
+          "graph_density": 0.24596774193548387,
+          "mean_degree": 7.625,
+          "min_degree": 4,
+          "max_degree": 12,
+          "diameter_hops": 4,
+          "mean_shortest_path_hops": 2.3669354838709675,
+          "max_base_distance": 23.488751376796557,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 58,
+        "generator_seed": 20260972,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_58.json",
+        "sha256": "56e88727aa61aea08bfdfd0302522cb908eb6faa0087fe1c611f611c43bb5e7f",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260972
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 75,
+          "graph_density": 0.15120967741935484,
+          "mean_degree": 4.6875,
+          "min_degree": 2,
+          "max_degree": 10,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.4798387096774195,
+          "max_base_distance": 28.79339239035128,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 59,
+        "generator_seed": 20260973,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_59.json",
+        "sha256": "4eead4f2ba8a995ec0c3df8bdcb56fb45d53c7c386190bf159d67f36962f4114",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260973
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 63,
+          "graph_density": 0.12701612903225806,
+          "mean_degree": 3.9375,
+          "min_degree": 1,
+          "max_degree": 10,
+          "diameter_hops": 9,
+          "mean_shortest_path_hops": 3.848790322580645,
+          "max_base_distance": 27.9246132251812,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 60,
+        "generator_seed": 20260974,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_60.json",
+        "sha256": "df8f6113c2a3e697354ade2b2cb68c252779a0f028eb30379c8840bd9afb1d51",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260974
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 108,
+          "graph_density": 0.21774193548387097,
+          "mean_degree": 6.75,
+          "min_degree": 3,
+          "max_degree": 10,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.568548387096774,
+          "max_base_distance": 22.758375716705746,
+          "base_degree": 5
+        }
+      },
+      {
+        "scene_id": 61,
+        "generator_seed": 20260975,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_61.json",
+        "sha256": "1cb7e44c465585cc31b99308fad18f65119e4e3220a425e674c540c28c839edc",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260975
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 102,
+          "graph_density": 0.2056451612903226,
+          "mean_degree": 6.375,
+          "min_degree": 2,
+          "max_degree": 12,
+          "diameter_hops": 6,
+          "mean_shortest_path_hops": 2.8306451612903225,
+          "max_base_distance": 23.495896366383203,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 62,
+        "generator_seed": 20260976,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_62.json",
+        "sha256": "179cdbcba7934214c50ae44347c55a3fa3da5b2e61ec62139a86b39424e805f0",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260976
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 61,
+          "graph_density": 0.12298387096774194,
+          "mean_degree": 3.8125,
+          "min_degree": 1,
+          "max_degree": 7,
+          "diameter_hops": 10,
+          "mean_shortest_path_hops": 4.73991935483871,
+          "max_base_distance": 38.2991413279993,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 63,
+        "generator_seed": 20260977,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_63.json",
+        "sha256": "5d11fe5edd3a4a45c98addd73385521fefefe6779f5cd07aed034d8d0ce529df",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260977
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 135,
+          "graph_density": 0.2721774193548387,
+          "mean_degree": 8.4375,
+          "min_degree": 3,
+          "max_degree": 14,
+          "diameter_hops": 4,
+          "mean_shortest_path_hops": 2.252016129032258,
+          "max_base_distance": 21.15725316269248,
+          "base_degree": 5
+        }
+      },
+      {
+        "scene_id": 64,
+        "generator_seed": 20260978,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_64.json",
+        "sha256": "4ea1997d26a6b1a1cdf21c6326ebf9e0b43780ae949114bfc3ef7f638284f513",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260978
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 65,
+          "graph_density": 0.1310483870967742,
+          "mean_degree": 4.0625,
+          "min_degree": 2,
+          "max_degree": 7,
+          "diameter_hops": 7,
+          "mean_shortest_path_hops": 3.3528225806451615,
+          "max_base_distance": 25.463853608618066,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 65,
+        "generator_seed": 20260979,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_65.json",
+        "sha256": "e8735df8f0d393d336f9f430f1dafc97e4489186b4a1c20883cce926985846d6",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260979
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 55,
+          "graph_density": 0.11088709677419355,
+          "mean_degree": 3.4375,
+          "min_degree": 1,
+          "max_degree": 7,
+          "diameter_hops": 14,
+          "mean_shortest_path_hops": 5.379032258064516,
+          "max_base_distance": 38.42981999475223,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 66,
+        "generator_seed": 20260980,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_66.json",
+        "sha256": "25b905015cc1be735f4badd2e4f7eb57eaf12d297a3eb1515d96b619a2868ea5",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260980
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 125,
+          "graph_density": 0.25201612903225806,
+          "mean_degree": 7.8125,
+          "min_degree": 3,
+          "max_degree": 12,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.368951612903226,
+          "max_base_distance": 23.379506949036724,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 67,
+        "generator_seed": 20260981,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_67.json",
+        "sha256": "9e12697408e8e4c9cdebd8d3a741efd6773479cede82e002b4ff4d504f509e15",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260981
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 82,
+          "graph_density": 0.16532258064516128,
+          "mean_degree": 5.125,
+          "min_degree": 2,
+          "max_degree": 8,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.5705645161290325,
+          "max_base_distance": 30.546753010761226,
+          "base_degree": 5
+        }
+      },
+      {
+        "scene_id": 68,
+        "generator_seed": 20260982,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_68.json",
+        "sha256": "52b57b5172e7812974d24b0f234f5a28106139a45e549b3f8fe6738a17267ca1",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260982
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 55,
+          "graph_density": 0.11088709677419355,
+          "mean_degree": 3.4375,
+          "min_degree": 1,
+          "max_degree": 6,
+          "diameter_hops": 11,
+          "mean_shortest_path_hops": 4.919354838709677,
+          "max_base_distance": 33.19129275993004,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 69,
+        "generator_seed": 20260983,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_69.json",
+        "sha256": "7a7d45e5654e4d9ebdc042540a0422bda20e6cb6be41a00cede1909dd57daf27",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260983
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 106,
+          "graph_density": 0.21370967741935484,
+          "mean_degree": 6.625,
+          "min_degree": 3,
+          "max_degree": 11,
+          "diameter_hops": 7,
+          "mean_shortest_path_hops": 2.931451612903226,
+          "max_base_distance": 34.206474725225796,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 70,
+        "generator_seed": 20260984,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_70.json",
+        "sha256": "4165e7f1069d90cafe82f96c58b25337f58aa12c4300e3c4db65ff085bdb5f6c",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260984
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 92,
+          "graph_density": 0.18548387096774194,
+          "mean_degree": 5.75,
+          "min_degree": 2,
+          "max_degree": 11,
+          "diameter_hops": 7,
+          "mean_shortest_path_hops": 2.9495967741935485,
+          "max_base_distance": 23.66964704013076,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 71,
+        "generator_seed": 20260985,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_71.json",
+        "sha256": "ed9a7b79214a6ab2e77b38ac502ddb24845e9ad4f202e1979937d09b37bf17be",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260985
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 49,
+          "graph_density": 0.09879032258064516,
+          "mean_degree": 3.0625,
+          "min_degree": 1,
+          "max_degree": 6,
+          "diameter_hops": 11,
+          "mean_shortest_path_hops": 4.681451612903226,
+          "max_base_distance": 39.03403831821869,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 72,
+        "generator_seed": 20260986,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_72.json",
+        "sha256": "0b1b77a40a71ad2991d952eea79dfe1da9f14631c0f3e8725b70c0c711387c08",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260986
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 89,
+          "graph_density": 0.17943548387096775,
+          "mean_degree": 5.5625,
+          "min_degree": 3,
+          "max_degree": 9,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.7923387096774195,
+          "max_base_distance": 23.82070649689105,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 73,
+        "generator_seed": 20260987,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_73.json",
+        "sha256": "9c29eae595547dbcfc73eaaa1d338f1edad4de5e86d2aede68614d9c7be67cf2",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260987
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 85,
+          "graph_density": 0.17137096774193547,
+          "mean_degree": 5.3125,
+          "min_degree": 2,
+          "max_degree": 10,
+          "diameter_hops": 7,
+          "mean_shortest_path_hops": 3.127016129032258,
+          "max_base_distance": 26.868338057628797,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 74,
+        "generator_seed": 20260988,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_74.json",
+        "sha256": "de8c6872609f4b358966da2b1673f26e5ec34804a41f8b198fc67ecb0375a1e1",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260988
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 48,
+          "graph_density": 0.0967741935483871,
+          "mean_degree": 3.0,
+          "min_degree": 1,
+          "max_degree": 5,
+          "diameter_hops": 19,
+          "mean_shortest_path_hops": 6.945564516129032,
+          "max_base_distance": 53.99126719525821,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 75,
+        "generator_seed": 20260989,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_75.json",
+        "sha256": "1a60df7a8c46887d7be9aad273e6a1254eadb8edc0bf7468245d81c7b6a83ccd",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260989
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 135,
+          "graph_density": 0.2721774193548387,
+          "mean_degree": 8.4375,
+          "min_degree": 4,
+          "max_degree": 15,
+          "diameter_hops": 4,
+          "mean_shortest_path_hops": 2.213709677419355,
+          "max_base_distance": 21.026488857432195,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 76,
+        "generator_seed": 20260990,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_76.json",
+        "sha256": "952cd6b4eaae5116fa84e79d66b766e3b55848797aef3754c64fda83b072fc1f",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260990
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 68,
+          "graph_density": 0.13709677419354838,
+          "mean_degree": 4.25,
+          "min_degree": 2,
+          "max_degree": 8,
+          "diameter_hops": 7,
+          "mean_shortest_path_hops": 3.532258064516129,
+          "max_base_distance": 23.26725088687406,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 77,
+        "generator_seed": 20260991,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_77.json",
+        "sha256": "856596a1855ae8bfa21a8b0d297840a525071ae02f2c26373ddf70cc719975c5",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260991
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 54,
+          "graph_density": 0.10887096774193548,
+          "mean_degree": 3.375,
+          "min_degree": 1,
+          "max_degree": 7,
+          "diameter_hops": 16,
+          "mean_shortest_path_hops": 5.602822580645161,
+          "max_base_distance": 37.594218099965815,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 78,
+        "generator_seed": 20260992,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_78.json",
+        "sha256": "4b5beb42ef38bab188be99c930245bd555d2c397b04d6c3f40c6814e01a72ce8",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260992
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 110,
+          "graph_density": 0.2217741935483871,
+          "mean_degree": 6.875,
+          "min_degree": 3,
+          "max_degree": 10,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.6088709677419355,
+          "max_base_distance": 24.17016171447917,
+          "base_degree": 7
+        }
+      },
+      {
+        "scene_id": 79,
+        "generator_seed": 20260993,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_79.json",
+        "sha256": "2bfbdf5804450d493fdcc75cb6c8c3fd1dd647613c86be1225fc83889688a0e0",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260993
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 78,
+          "graph_density": 0.15725806451612903,
+          "mean_degree": 4.875,
+          "min_degree": 2,
+          "max_degree": 7,
+          "diameter_hops": 10,
+          "mean_shortest_path_hops": 4.44758064516129,
+          "max_base_distance": 27.54031681087733,
+          "base_degree": 5
+        }
+      },
+      {
+        "scene_id": 80,
+        "generator_seed": 20260994,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_80.json",
+        "sha256": "211ef2c48f25cb2c8e2d934db9b777a5606898b4eef2a537f764c94e2dfcdbc9",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260994
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 65,
+          "graph_density": 0.1310483870967742,
+          "mean_degree": 4.0625,
+          "min_degree": 1,
+          "max_degree": 8,
+          "diameter_hops": 14,
+          "mean_shortest_path_hops": 4.870967741935484,
+          "max_base_distance": 31.594616082959345,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 81,
+        "generator_seed": 20260995,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_81.json",
+        "sha256": "20017fee969f85c05ad582e7482c859a126a19163a04a791f83b6b2f172bac1d",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260995
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 145,
+          "graph_density": 0.2923387096774194,
+          "mean_degree": 9.0625,
+          "min_degree": 3,
+          "max_degree": 15,
+          "diameter_hops": 4,
+          "mean_shortest_path_hops": 2.131048387096774,
+          "max_base_distance": 18.604592890142015,
+          "base_degree": 6
+        }
+      },
+      {
+        "scene_id": 82,
+        "generator_seed": 20260996,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_82.json",
+        "sha256": "4c28277ded004decb32176c6d055ffda5450b53f7086a249395893382387c3f1",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260996
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 84,
+          "graph_density": 0.1693548387096774,
+          "mean_degree": 5.25,
+          "min_degree": 2,
+          "max_degree": 8,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.5443548387096775,
+          "max_base_distance": 27.723088377143775,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 83,
+        "generator_seed": 20260997,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_83.json",
+        "sha256": "e64059fb778293ff9716ad640eef8f75cba96cbc21c9df048fbd58b904acf8ef",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260997
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 56,
+          "graph_density": 0.11290322580645161,
+          "mean_degree": 3.5,
+          "min_degree": 1,
+          "max_degree": 7,
+          "diameter_hops": 10,
+          "mean_shortest_path_hops": 4.403225806451613,
+          "max_base_distance": 35.59221947702087,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 84,
+        "generator_seed": 20260998,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_84.json",
+        "sha256": "b80712c0d29cfbabe2cd0ca9bc3717980faaa6cd8ecffac2cf4fda6f01d750f6",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260998
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 128,
+          "graph_density": 0.25806451612903225,
+          "mean_degree": 8.0,
+          "min_degree": 4,
+          "max_degree": 13,
+          "diameter_hops": 4,
+          "mean_shortest_path_hops": 2.370967741935484,
+          "max_base_distance": 19.780330641790187,
+          "base_degree": 5
+        }
+      },
+      {
+        "scene_id": 85,
+        "generator_seed": 20260999,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_85.json",
+        "sha256": "de649700414c7c328aeceef490643dbfc8107236a878365298c3246df171c569",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20260999
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 78,
+          "graph_density": 0.15725806451612903,
+          "mean_degree": 4.875,
+          "min_degree": 2,
+          "max_degree": 9,
+          "diameter_hops": 7,
+          "mean_shortest_path_hops": 3.473790322580645,
+          "max_base_distance": 30.386788146118647,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 86,
+        "generator_seed": 20261000,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_86.json",
+        "sha256": "01e923407c09902c16dacb68550bda5083f12b4c770c16d5a0e8d6835074ecfa",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20261000
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 60,
+          "graph_density": 0.12096774193548387,
+          "mean_degree": 3.75,
+          "min_degree": 1,
+          "max_degree": 7,
+          "diameter_hops": 12,
+          "mean_shortest_path_hops": 5.298387096774194,
+          "max_base_distance": 42.882827226089454,
+          "base_degree": 5
+        }
+      },
+      {
+        "scene_id": 87,
+        "generator_seed": 20261001,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_87.json",
+        "sha256": "6b35b8a9dab867e1c459fdb9b5a1ddde2967f301797f76cbfe03351b79cb0a62",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20261001
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 115,
+          "graph_density": 0.2318548387096774,
+          "mean_degree": 7.1875,
+          "min_degree": 3,
+          "max_degree": 11,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.566532258064516,
+          "max_base_distance": 23.977255760979794,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 88,
+        "generator_seed": 20261002,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_88.json",
+        "sha256": "b653b5fac4db48da4d43176c6591b558a9fc2a64af84124731c5b4c7b5f7ce4a",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20261002
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 75,
+          "graph_density": 0.15120967741935484,
+          "mean_degree": 4.6875,
+          "min_degree": 2,
+          "max_degree": 8,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.681451612903226,
+          "max_base_distance": 34.82056380360247,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 89,
+        "generator_seed": 20261003,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_89.json",
+        "sha256": "530b4a1391d84339d80d852944bff7ef18a6a7795a0b7c9bc006ed6a563e5874",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20261003
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 58,
+          "graph_density": 0.11693548387096774,
+          "mean_degree": 3.625,
+          "min_degree": 1,
+          "max_degree": 7,
+          "diameter_hops": 15,
+          "mean_shortest_path_hops": 6.014112903225806,
+          "max_base_distance": 56.67038078781946,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 90,
+        "generator_seed": 20261004,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_90.json",
+        "sha256": "61dda024d7d792187ffda953b0d321e3d0bdfb68dd49a46ca13fd072f07fa32b",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20261004
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 98,
+          "graph_density": 0.1975806451612903,
+          "mean_degree": 6.125,
+          "min_degree": 3,
+          "max_degree": 10,
+          "diameter_hops": 9,
+          "mean_shortest_path_hops": 3.7298387096774195,
+          "max_base_distance": 31.06820438116995,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 91,
+        "generator_seed": 20261005,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_91.json",
+        "sha256": "2df780c4dc09f97f5396d384335354cd9d9e5e3f05647aceea44d34a0c3f0f80",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20261005
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 89,
+          "graph_density": 0.17943548387096775,
+          "mean_degree": 5.5625,
+          "min_degree": 2,
+          "max_degree": 10,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.189516129032258,
+          "max_base_distance": 30.190689222550848,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 92,
+        "generator_seed": 20261006,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_92.json",
+        "sha256": "6ff2c4e1f4cec91b5544c6921d81c144e30ee518b92089bc6f82c6239d5c20e5",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20261006
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 54,
+          "graph_density": 0.10887096774193548,
+          "mean_degree": 3.375,
+          "min_degree": 1,
+          "max_degree": 6,
+          "diameter_hops": 12,
+          "mean_shortest_path_hops": 5.330645161290323,
+          "max_base_distance": 37.82860895537911,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 93,
+        "generator_seed": 20261007,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_93.json",
+        "sha256": "71e35385ed88d0b91bc9ce092b7808469dd3a1d9ec0eed1abd9bd6cae2f5a61d",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20261007
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 101,
+          "graph_density": 0.20362903225806453,
+          "mean_degree": 6.3125,
+          "min_degree": 3,
+          "max_degree": 11,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.5705645161290325,
+          "max_base_distance": 22.718365821543728,
+          "base_degree": 5
+        }
+      },
+      {
+        "scene_id": 94,
+        "generator_seed": 20261008,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_94.json",
+        "sha256": "8f1bc264816fd07a7d2d9a9df839313b4cd2a4950fac8172a02d06ab91437fc8",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20261008
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 69,
+          "graph_density": 0.13911290322580644,
+          "mean_degree": 4.3125,
+          "min_degree": 2,
+          "max_degree": 7,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.6028225806451615,
+          "max_base_distance": 27.914217165598707,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 95,
+        "generator_seed": 20261009,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_95.json",
+        "sha256": "dd363c2bb610494df85430e73b19b03bf88d7a8d87d36bfbca85aac3ff86a7ff",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20261009
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 47,
+          "graph_density": 0.09475806451612903,
+          "mean_degree": 2.9375,
+          "min_degree": 1,
+          "max_degree": 5,
+          "diameter_hops": 15,
+          "mean_shortest_path_hops": 6.068548387096774,
+          "max_base_distance": 50.25274167580908,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 96,
+        "generator_seed": 20261010,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_96.json",
+        "sha256": "f4a280e29910ef618594eb5850634e8846bb9f7ff1343c7023dfdaedf7f6843a",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20261010
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 122,
+          "graph_density": 0.24596774193548387,
+          "mean_degree": 7.625,
+          "min_degree": 3,
+          "max_degree": 13,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.3326612903225805,
+          "max_base_distance": 21.28176775904249,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 97,
+        "generator_seed": 20261011,
+        "difficulty": "medium",
+        "relative_path": "train/scene_seed_97.json",
+        "sha256": "152738fd396ec22b823e397e6cdcc2cc58a297629cf3b3e19b8d80f878536f0c",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20261011
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 91,
+          "graph_density": 0.18346774193548387,
+          "mean_degree": 5.6875,
+          "min_degree": 2,
+          "max_degree": 12,
+          "diameter_hops": 7,
+          "mean_shortest_path_hops": 3.471774193548387,
+          "max_base_distance": 29.367775504786177,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 98,
+        "generator_seed": 20261012,
+        "difficulty": "hard",
+        "relative_path": "train/scene_seed_98.json",
+        "sha256": "53a8b2dd129e34648ae67a939a52b10b1b08add29db033be76d448d678a6afaf",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20261012
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 46,
+          "graph_density": 0.09274193548387097,
+          "mean_degree": 2.875,
+          "min_degree": 1,
+          "max_degree": 5,
+          "diameter_hops": 11,
+          "mean_shortest_path_hops": 4.8125,
+          "max_base_distance": 38.835854696425194,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 99,
+        "generator_seed": 20261013,
+        "difficulty": "easy",
+        "relative_path": "train/scene_seed_99.json",
+        "sha256": "b74fb514f01ce2f7e010cff8bce772763878b11981a5ea25c0e2e75a6e549ab2",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20261013
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 147,
+          "graph_density": 0.2963709677419355,
+          "mean_degree": 9.1875,
+          "min_degree": 3,
+          "max_degree": 18,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.1068548387096775,
+          "max_base_distance": 21.554798972915087,
+          "base_degree": 4
+        }
+      }
+    ],
+    "validation": [
+      {
+        "scene_id": 0,
+        "generator_seed": 20360914,
+        "difficulty": "easy",
+        "relative_path": "validation/scene_seed_0.json",
+        "sha256": "15b2d41e47ebbb8003be3b16c59f03ceb1f65d9dd6c8c3f8ed42512a1caa2ca0",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20360914
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 106,
+          "graph_density": 0.21370967741935484,
+          "mean_degree": 6.625,
+          "min_degree": 3,
+          "max_degree": 12,
+          "diameter_hops": 6,
+          "mean_shortest_path_hops": 2.435483870967742,
+          "max_base_distance": 25.28448955098628,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 1,
+        "generator_seed": 20360915,
+        "difficulty": "medium",
+        "relative_path": "validation/scene_seed_1.json",
+        "sha256": "d9fd10626e5fc4a36392bcf62e9c17ce45b931445705237cebfec2c9b251a9ef",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20360915
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 90,
+          "graph_density": 0.1814516129032258,
+          "mean_degree": 5.625,
+          "min_degree": 2,
+          "max_degree": 12,
+          "diameter_hops": 7,
+          "mean_shortest_path_hops": 3.0504032258064515,
+          "max_base_distance": 27.193963468776314,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 2,
+        "generator_seed": 20360916,
+        "difficulty": "hard",
+        "relative_path": "validation/scene_seed_2.json",
+        "sha256": "22616bafde4a49d43702a17657a848258673d6b36b1156a0d9cd9cd199150a38",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20360916
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 48,
+          "graph_density": 0.0967741935483871,
+          "mean_degree": 3.0,
+          "min_degree": 1,
+          "max_degree": 6,
+          "diameter_hops": 11,
+          "mean_shortest_path_hops": 4.800403225806452,
+          "max_base_distance": 33.53158072269603,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 3,
+        "generator_seed": 20360917,
+        "difficulty": "easy",
+        "relative_path": "validation/scene_seed_3.json",
+        "sha256": "69a3ba689eb74ec1c265fae56d92d2b8cb8f92d97d9062e1478cb729a832c9c1",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20360917
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 100,
+          "graph_density": 0.20161290322580644,
+          "mean_degree": 6.25,
+          "min_degree": 4,
+          "max_degree": 10,
+          "diameter_hops": 6,
+          "mean_shortest_path_hops": 2.9838709677419355,
+          "max_base_distance": 28.053632811538336,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 4,
+        "generator_seed": 20360918,
+        "difficulty": "medium",
+        "relative_path": "validation/scene_seed_4.json",
+        "sha256": "55eb7eefdd630c3e59f8a29ee52a3f23d06048c9590882f2172a072198c3522b",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20360918
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 84,
+          "graph_density": 0.1693548387096774,
+          "mean_degree": 5.25,
+          "min_degree": 2,
+          "max_degree": 11,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.3266129032258065,
+          "max_base_distance": 23.598838738712168,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 5,
+        "generator_seed": 20360919,
+        "difficulty": "hard",
+        "relative_path": "validation/scene_seed_5.json",
+        "sha256": "283d257cc7e511cc9b89c038dfb5e01565baea82bb1e1efc091d56da15329ba4",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20360919
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 51,
+          "graph_density": 0.1028225806451613,
+          "mean_degree": 3.1875,
+          "min_degree": 1,
+          "max_degree": 6,
+          "diameter_hops": 10,
+          "mean_shortest_path_hops": 4.582661290322581,
+          "max_base_distance": 39.90717353592111,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 6,
+        "generator_seed": 20360920,
+        "difficulty": "easy",
+        "relative_path": "validation/scene_seed_6.json",
+        "sha256": "2e7e256995de8422cd3f6760703bae05546de94e5fe0b4000de62331eec69cc6",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20360920
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 164,
+          "graph_density": 0.33064516129032256,
+          "mean_degree": 10.25,
+          "min_degree": 3,
+          "max_degree": 18,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 1.997983870967742,
+          "max_base_distance": 22.235729087783653,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 7,
+        "generator_seed": 20360921,
+        "difficulty": "medium",
+        "relative_path": "validation/scene_seed_7.json",
+        "sha256": "67316ed4a358fc20e6f5c40a1c1ffa5f297981b7a70609cdcda56ca4ea9cb01a",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20360921
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 72,
+          "graph_density": 0.14516129032258066,
+          "mean_degree": 4.5,
+          "min_degree": 2,
+          "max_degree": 7,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.6169354838709675,
+          "max_base_distance": 33.63157917300849,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 8,
+        "generator_seed": 20360922,
+        "difficulty": "hard",
+        "relative_path": "validation/scene_seed_8.json",
+        "sha256": "144fd24190205f7add426cc79da8af1757fb16c57b7a1f9034ad39b54fcc8f0e",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20360922
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 56,
+          "graph_density": 0.11290322580645161,
+          "mean_degree": 3.5,
+          "min_degree": 1,
+          "max_degree": 7,
+          "diameter_hops": 15,
+          "mean_shortest_path_hops": 5.810483870967742,
+          "max_base_distance": 38.80488422173068,
+          "base_degree": 5
+        }
+      },
+      {
+        "scene_id": 9,
+        "generator_seed": 20360923,
+        "difficulty": "easy",
+        "relative_path": "validation/scene_seed_9.json",
+        "sha256": "d5720f6410dab2836c42868a3f818c86466178dc043b65f3cb4ba21d73af1282",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20360923
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 128,
+          "graph_density": 0.25806451612903225,
+          "mean_degree": 8.0,
+          "min_degree": 3,
+          "max_degree": 14,
+          "diameter_hops": 6,
+          "mean_shortest_path_hops": 2.649193548387097,
+          "max_base_distance": 20.45908980728388,
+          "base_degree": 5
+        }
+      },
+      {
+        "scene_id": 10,
+        "generator_seed": 20360924,
+        "difficulty": "medium",
+        "relative_path": "validation/scene_seed_10.json",
+        "sha256": "b3d50c454e162158e0a582d286233b706721eeb5aba0650c3659b5e3530149b5",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20360924
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 99,
+          "graph_density": 0.19959677419354838,
+          "mean_degree": 6.1875,
+          "min_degree": 2,
+          "max_degree": 12,
+          "diameter_hops": 7,
+          "mean_shortest_path_hops": 3.0524193548387095,
+          "max_base_distance": 23.462113012846842,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 11,
+        "generator_seed": 20360925,
+        "difficulty": "hard",
+        "relative_path": "validation/scene_seed_11.json",
+        "sha256": "621ac134fc4622df57560518ce4f2e45bb073c3066acbe0fa8307ef681e49e2d",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20360925
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 68,
+          "graph_density": 0.13709677419354838,
+          "mean_degree": 4.25,
+          "min_degree": 1,
+          "max_degree": 8,
+          "diameter_hops": 9,
+          "mean_shortest_path_hops": 4.463709677419355,
+          "max_base_distance": 36.0831898913328,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 12,
+        "generator_seed": 20360926,
+        "difficulty": "easy",
+        "relative_path": "validation/scene_seed_12.json",
+        "sha256": "7ee671547e8d2d3bc310f1d943029490e3a60171ecbab16454c436e397bdf9f3",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20360926
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 122,
+          "graph_density": 0.24596774193548387,
+          "mean_degree": 7.625,
+          "min_degree": 3,
+          "max_degree": 12,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.3528225806451615,
+          "max_base_distance": 20.637775813154185,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 13,
+        "generator_seed": 20360927,
+        "difficulty": "medium",
+        "relative_path": "validation/scene_seed_13.json",
+        "sha256": "97d819b888b51e2b4d2b5adaf0f9145eb43a5a5942ed893ccd790906750d23a2",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20360927
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 77,
+          "graph_density": 0.15524193548387097,
+          "mean_degree": 4.8125,
+          "min_degree": 2,
+          "max_degree": 9,
+          "diameter_hops": 9,
+          "mean_shortest_path_hops": 4.006048387096774,
+          "max_base_distance": 35.51375984442405,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 14,
+        "generator_seed": 20360928,
+        "difficulty": "hard",
+        "relative_path": "validation/scene_seed_14.json",
+        "sha256": "537bc977c025824ac38c00cfd2376592b74d8638c0d006f62d9e4c67e8be3bab",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20360928
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 47,
+          "graph_density": 0.09475806451612903,
+          "mean_degree": 2.9375,
+          "min_degree": 1,
+          "max_degree": 5,
+          "diameter_hops": 14,
+          "mean_shortest_path_hops": 5.752016129032258,
+          "max_base_distance": 31.363150602776994,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 15,
+        "generator_seed": 20360929,
+        "difficulty": "easy",
+        "relative_path": "validation/scene_seed_15.json",
+        "sha256": "155940a84bdf00755768ab41cefb165e4e8ba636b416c01f7216ee0657dd5c56",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20360929
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 131,
+          "graph_density": 0.26411290322580644,
+          "mean_degree": 8.1875,
+          "min_degree": 3,
+          "max_degree": 13,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.2338709677419355,
+          "max_base_distance": 23.635089306344796,
+          "base_degree": 5
+        }
+      },
+      {
+        "scene_id": 16,
+        "generator_seed": 20360930,
+        "difficulty": "medium",
+        "relative_path": "validation/scene_seed_16.json",
+        "sha256": "d9f6156db13c22eb92c85a8fc4c9faa59875bdb06728d0f6e08fe5f33ae9e953",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20360930
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 73,
+          "graph_density": 0.14717741935483872,
+          "mean_degree": 4.5625,
+          "min_degree": 2,
+          "max_degree": 7,
+          "diameter_hops": 10,
+          "mean_shortest_path_hops": 3.9153225806451615,
+          "max_base_distance": 28.219408383982234,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 17,
+        "generator_seed": 20360931,
+        "difficulty": "hard",
+        "relative_path": "validation/scene_seed_17.json",
+        "sha256": "37c94b4b63173afcb88af56d7dc9e290dc04327fccbb78dd42f770e710e0339b",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20360931
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 60,
+          "graph_density": 0.12096774193548387,
+          "mean_degree": 3.75,
+          "min_degree": 1,
+          "max_degree": 8,
+          "diameter_hops": 14,
+          "mean_shortest_path_hops": 5.298387096774194,
+          "max_base_distance": 45.907137535566065,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 18,
+        "generator_seed": 20360932,
+        "difficulty": "easy",
+        "relative_path": "validation/scene_seed_18.json",
+        "sha256": "85bda3ed3955e90e1804d3fb9c015310b767d1291eb11fc0f8e7268b7c127098",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20360932
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 120,
+          "graph_density": 0.24193548387096775,
+          "mean_degree": 7.5,
+          "min_degree": 3,
+          "max_degree": 13,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.372983870967742,
+          "max_base_distance": 24.700728079243284,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 19,
+        "generator_seed": 20360933,
+        "difficulty": "medium",
+        "relative_path": "validation/scene_seed_19.json",
+        "sha256": "bb5bd648539295d7a83cfdc2abd291b44d74a0ee1f2437d7fb8a1cfd86446c2f",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20360933
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 82,
+          "graph_density": 0.16532258064516128,
+          "mean_degree": 5.125,
+          "min_degree": 2,
+          "max_degree": 8,
+          "diameter_hops": 7,
+          "mean_shortest_path_hops": 3.5443548387096775,
+          "max_base_distance": 26.637781398854592,
+          "base_degree": 4
+        }
+      }
+    ],
+    "test": [
+      {
+        "scene_id": 0,
+        "generator_seed": 20460914,
+        "difficulty": "easy",
+        "relative_path": "test/scene_seed_0.json",
+        "sha256": "0ba260cc3725a3b45666edc21333a450bd8910baba6127500f729443209e26ee",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460914
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 136,
+          "graph_density": 0.27419354838709675,
+          "mean_degree": 8.5,
+          "min_degree": 3,
+          "max_degree": 12,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.3306451612903225,
+          "max_base_distance": 23.42034228174896,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 1,
+        "generator_seed": 20460915,
+        "difficulty": "medium",
+        "relative_path": "test/scene_seed_1.json",
+        "sha256": "99e8581ff65b69c20a0667c5fd2c1fe7f6d85a6d00c93cb7028f202f7f83fe03",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460915
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 74,
+          "graph_density": 0.14919354838709678,
+          "mean_degree": 4.625,
+          "min_degree": 2,
+          "max_degree": 8,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.3669354838709675,
+          "max_base_distance": 28.47155876889567,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 2,
+        "generator_seed": 20460916,
+        "difficulty": "hard",
+        "relative_path": "test/scene_seed_2.json",
+        "sha256": "8491e659ecbcebc9023b9b7ab6cfe89521df383057746886bde34e947e8ce874",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460916
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 42,
+          "graph_density": 0.0846774193548387,
+          "mean_degree": 2.625,
+          "min_degree": 1,
+          "max_degree": 4,
+          "diameter_hops": 13,
+          "mean_shortest_path_hops": 5.397177419354839,
+          "max_base_distance": 41.87339596033739,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 3,
+        "generator_seed": 20460917,
+        "difficulty": "easy",
+        "relative_path": "test/scene_seed_3.json",
+        "sha256": "ac612469a60a3bd445c90001c5572e6c839b74d4769907b813ed523d48523a3c",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460917
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 104,
+          "graph_density": 0.20967741935483872,
+          "mean_degree": 6.5,
+          "min_degree": 3,
+          "max_degree": 12,
+          "diameter_hops": 7,
+          "mean_shortest_path_hops": 3.024193548387097,
+          "max_base_distance": 22.772520053121315,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 4,
+        "generator_seed": 20460918,
+        "difficulty": "medium",
+        "relative_path": "test/scene_seed_4.json",
+        "sha256": "93beeb9e3ffc971a7dca4b81532ac628f8172a8117e90c6b797774df6b2c8495",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460918
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 74,
+          "graph_density": 0.14919354838709678,
+          "mean_degree": 4.625,
+          "min_degree": 2,
+          "max_degree": 7,
+          "diameter_hops": 11,
+          "mean_shortest_path_hops": 4.528225806451613,
+          "max_base_distance": 32.700055156925316,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 5,
+        "generator_seed": 20460919,
+        "difficulty": "hard",
+        "relative_path": "test/scene_seed_5.json",
+        "sha256": "7c0f77601ac55fa1b946a4fa839fd55f06539dad2d7b4260d7163c845c5007f0",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460919
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 47,
+          "graph_density": 0.09475806451612903,
+          "mean_degree": 2.9375,
+          "min_degree": 1,
+          "max_degree": 5,
+          "diameter_hops": 14,
+          "mean_shortest_path_hops": 5.425403225806452,
+          "max_base_distance": 35.29111386192166,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 6,
+        "generator_seed": 20460920,
+        "difficulty": "easy",
+        "relative_path": "test/scene_seed_6.json",
+        "sha256": "d3c11914163431e80c3b1edcf6ca1c29bfea41506393a19e2043daa72536e11f",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460920
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 115,
+          "graph_density": 0.2318548387096774,
+          "mean_degree": 7.1875,
+          "min_degree": 3,
+          "max_degree": 12,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.377016129032258,
+          "max_base_distance": 23.672608822266035,
+          "base_degree": 5
+        }
+      },
+      {
+        "scene_id": 7,
+        "generator_seed": 20460921,
+        "difficulty": "medium",
+        "relative_path": "test/scene_seed_7.json",
+        "sha256": "8e623f2d5e4541c6877184ac79ef4d830f8401740d4127e7f648589e6d6962c4",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460921
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 79,
+          "graph_density": 0.1592741935483871,
+          "mean_degree": 4.9375,
+          "min_degree": 2,
+          "max_degree": 10,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.3931451612903225,
+          "max_base_distance": 29.954621223394483,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 8,
+        "generator_seed": 20460922,
+        "difficulty": "hard",
+        "relative_path": "test/scene_seed_8.json",
+        "sha256": "5083ba0690cbb7a2993e43cd1478bf4c8e62ec818685041957c56e136960fd26",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460922
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 61,
+          "graph_density": 0.12298387096774194,
+          "mean_degree": 3.8125,
+          "min_degree": 1,
+          "max_degree": 8,
+          "diameter_hops": 14,
+          "mean_shortest_path_hops": 4.98991935483871,
+          "max_base_distance": 46.806103907733,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 9,
+        "generator_seed": 20460923,
+        "difficulty": "easy",
+        "relative_path": "test/scene_seed_9.json",
+        "sha256": "ce8dc95135265b5935f5180e0a0d7701ed89ec3da587537b21bb80214657ac15",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460923
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 113,
+          "graph_density": 0.22782258064516128,
+          "mean_degree": 7.0625,
+          "min_degree": 3,
+          "max_degree": 13,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.379032258064516,
+          "max_base_distance": 24.34038677872693,
+          "base_degree": 5
+        }
+      },
+      {
+        "scene_id": 10,
+        "generator_seed": 20460924,
+        "difficulty": "medium",
+        "relative_path": "test/scene_seed_10.json",
+        "sha256": "25e028d8b4d204c6511cf6e7766aad129783cfabd9db416e48760437a5dcbea0",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460924
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 72,
+          "graph_density": 0.14516129032258066,
+          "mean_degree": 4.5,
+          "min_degree": 2,
+          "max_degree": 8,
+          "diameter_hops": 9,
+          "mean_shortest_path_hops": 4.054435483870968,
+          "max_base_distance": 42.724872493756216,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 11,
+        "generator_seed": 20460925,
+        "difficulty": "hard",
+        "relative_path": "test/scene_seed_11.json",
+        "sha256": "d5403c2b0915e48cc37a6419bd0e441234a3c8068b0cb166337f08448375fb92",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460925
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 90,
+          "graph_density": 0.1814516129032258,
+          "mean_degree": 5.625,
+          "min_degree": 1,
+          "max_degree": 12,
+          "diameter_hops": 9,
+          "mean_shortest_path_hops": 3.461693548387097,
+          "max_base_distance": 36.5831615263838,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 12,
+        "generator_seed": 20460926,
+        "difficulty": "easy",
+        "relative_path": "test/scene_seed_12.json",
+        "sha256": "09fbd24d4169efb6c23d3723785ec6b1752401a2baf405086fcd83fea4d6c2f6",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460926
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 138,
+          "graph_density": 0.2782258064516129,
+          "mean_degree": 8.625,
+          "min_degree": 3,
+          "max_degree": 15,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.25,
+          "max_base_distance": 19.83784050284883,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 13,
+        "generator_seed": 20460927,
+        "difficulty": "medium",
+        "relative_path": "test/scene_seed_13.json",
+        "sha256": "2a5f316089ced571d1d949e4e19a45697352a7c7ad943e2f1a064f26de22c061",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460927
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 75,
+          "graph_density": 0.15120967741935484,
+          "mean_degree": 4.6875,
+          "min_degree": 2,
+          "max_degree": 9,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.504032258064516,
+          "max_base_distance": 28.71596865911715,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 14,
+        "generator_seed": 20460928,
+        "difficulty": "hard",
+        "relative_path": "test/scene_seed_14.json",
+        "sha256": "449742498dcabaef8cd5465d02495c1b7183cd5e4e68ac0ae8fc79a332a2ff52",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460928
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 46,
+          "graph_density": 0.09274193548387097,
+          "mean_degree": 2.875,
+          "min_degree": 1,
+          "max_degree": 4,
+          "diameter_hops": 15,
+          "mean_shortest_path_hops": 6.157258064516129,
+          "max_base_distance": 58.01985762145645,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 15,
+        "generator_seed": 20460929,
+        "difficulty": "easy",
+        "relative_path": "test/scene_seed_15.json",
+        "sha256": "92930319429543c4da603013b2b6f4efc1a3df65c68c834a6c5e50c34bbf7a4c",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460929
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 114,
+          "graph_density": 0.22983870967741934,
+          "mean_degree": 7.125,
+          "min_degree": 3,
+          "max_degree": 11,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.441532258064516,
+          "max_base_distance": 23.963804204248135,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 16,
+        "generator_seed": 20460930,
+        "difficulty": "medium",
+        "relative_path": "test/scene_seed_16.json",
+        "sha256": "de5389766982b3663a614d02279b88f1d657bd2d8d784d7070441737fd831168",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460930
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 77,
+          "graph_density": 0.15524193548387097,
+          "mean_degree": 4.8125,
+          "min_degree": 2,
+          "max_degree": 10,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.346774193548387,
+          "max_base_distance": 27.961151749422953,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 17,
+        "generator_seed": 20460931,
+        "difficulty": "hard",
+        "relative_path": "test/scene_seed_17.json",
+        "sha256": "4888a35497e3b0186f08ca5646cfc6ee10943e2ab1b798e52d9e662c13b14daa",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460931
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 56,
+          "graph_density": 0.11290322580645161,
+          "mean_degree": 3.5,
+          "min_degree": 1,
+          "max_degree": 6,
+          "diameter_hops": 15,
+          "mean_shortest_path_hops": 5.643145161290323,
+          "max_base_distance": 45.82859448807228,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 18,
+        "generator_seed": 20460932,
+        "difficulty": "easy",
+        "relative_path": "test/scene_seed_18.json",
+        "sha256": "c5f54acece792f15e72ef7181ed7f203f574ed0884b053b6696b4b24d2388445",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460932
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 126,
+          "graph_density": 0.2540322580645161,
+          "mean_degree": 7.875,
+          "min_degree": 4,
+          "max_degree": 13,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.282258064516129,
+          "max_base_distance": 20.69087692618039,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 19,
+        "generator_seed": 20460933,
+        "difficulty": "medium",
+        "relative_path": "test/scene_seed_19.json",
+        "sha256": "3548930f8677cb3dee0c7954af2c4c23cc3af7a7435deb5d65357a10513c7805",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460933
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 93,
+          "graph_density": 0.1875,
+          "mean_degree": 5.8125,
+          "min_degree": 2,
+          "max_degree": 11,
+          "diameter_hops": 6,
+          "mean_shortest_path_hops": 2.780241935483871,
+          "max_base_distance": 23.885141485985848,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 20,
+        "generator_seed": 20460934,
+        "difficulty": "hard",
+        "relative_path": "test/scene_seed_20.json",
+        "sha256": "ff6ce57617b53fcd819361d8127c87b5a069e325d2f6fe70708a1f6c7f276766",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460934
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 53,
+          "graph_density": 0.10685483870967742,
+          "mean_degree": 3.3125,
+          "min_degree": 1,
+          "max_degree": 6,
+          "diameter_hops": 17,
+          "mean_shortest_path_hops": 5.963709677419355,
+          "max_base_distance": 37.909055172116794,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 21,
+        "generator_seed": 20460935,
+        "difficulty": "easy",
+        "relative_path": "test/scene_seed_21.json",
+        "sha256": "be70c76ce6c00cbba955e94500b41d219aa4a7d17312c2104f9d7b658daf336f",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460935
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 124,
+          "graph_density": 0.25,
+          "mean_degree": 7.75,
+          "min_degree": 3,
+          "max_degree": 11,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.3649193548387095,
+          "max_base_distance": 24.18938543382811,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 22,
+        "generator_seed": 20460936,
+        "difficulty": "medium",
+        "relative_path": "test/scene_seed_22.json",
+        "sha256": "6c9ab4f34eaa76618fc84da808713b51bb54552302058144f251f34ac4ba3a50",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460936
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 67,
+          "graph_density": 0.1350806451612903,
+          "mean_degree": 4.1875,
+          "min_degree": 2,
+          "max_degree": 8,
+          "diameter_hops": 9,
+          "mean_shortest_path_hops": 3.879032258064516,
+          "max_base_distance": 37.80083050171232,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 23,
+        "generator_seed": 20460937,
+        "difficulty": "hard",
+        "relative_path": "test/scene_seed_23.json",
+        "sha256": "2d95d84aeac378a6dd1cd6045cbc53706f128dfd4340657a6f48516edd9b1c10",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460937
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 53,
+          "graph_density": 0.10685483870967742,
+          "mean_degree": 3.3125,
+          "min_degree": 1,
+          "max_degree": 7,
+          "diameter_hops": 14,
+          "mean_shortest_path_hops": 5.381048387096774,
+          "max_base_distance": 35.687077300081256,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 24,
+        "generator_seed": 20460938,
+        "difficulty": "easy",
+        "relative_path": "test/scene_seed_24.json",
+        "sha256": "e2128f6432dc06688e13bae1f24478a890f9d70585c25c8370a4341bd2fc6b72",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460938
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 158,
+          "graph_density": 0.3185483870967742,
+          "mean_degree": 9.875,
+          "min_degree": 3,
+          "max_degree": 17,
+          "diameter_hops": 4,
+          "mean_shortest_path_hops": 1.9899193548387097,
+          "max_base_distance": 21.563638474594878,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 25,
+        "generator_seed": 20460939,
+        "difficulty": "medium",
+        "relative_path": "test/scene_seed_25.json",
+        "sha256": "3084f07a37ea9ad95809f48b33a688c2119d458a2472dc62a20e8d7d9c201827",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460939
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 88,
+          "graph_density": 0.1774193548387097,
+          "mean_degree": 5.5,
+          "min_degree": 2,
+          "max_degree": 10,
+          "diameter_hops": 8,
+          "mean_shortest_path_hops": 3.4475806451612905,
+          "max_base_distance": 24.133746481178058,
+          "base_degree": 5
+        }
+      },
+      {
+        "scene_id": 26,
+        "generator_seed": 20460940,
+        "difficulty": "hard",
+        "relative_path": "test/scene_seed_26.json",
+        "sha256": "4e8e0ace219b695c1c2ce67e76ee5dbb2ab259a3dfe0c9a621d382c3255d8e44",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460940
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 53,
+          "graph_density": 0.10685483870967742,
+          "mean_degree": 3.3125,
+          "min_degree": 1,
+          "max_degree": 5,
+          "diameter_hops": 15,
+          "mean_shortest_path_hops": 5.911290322580645,
+          "max_base_distance": 29.101941470345345,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 27,
+        "generator_seed": 20460941,
+        "difficulty": "easy",
+        "relative_path": "test/scene_seed_27.json",
+        "sha256": "ae4a6675f8c9e8d396848b3d5d12cf9e96b10c464e1d938031a7c074915bdcae",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 18.0,
+          "area_height": 18.0,
+          "connection_radius": 6.0,
+          "extra_k_nearest": 3,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460941
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 104,
+          "graph_density": 0.20967741935483872,
+          "mean_degree": 6.5,
+          "min_degree": 3,
+          "max_degree": 10,
+          "diameter_hops": 5,
+          "mean_shortest_path_hops": 2.5705645161290325,
+          "max_base_distance": 24.482993239246955,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 28,
+        "generator_seed": 20460942,
+        "difficulty": "medium",
+        "relative_path": "test/scene_seed_28.json",
+        "sha256": "8d03e0587ed8c8542f32ab76288aa97dbda9e9fb105fa39dd2dbaf2e1a123a6f",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 20.0,
+          "area_height": 20.0,
+          "connection_radius": 5.0,
+          "extra_k_nearest": 2,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460942
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 69,
+          "graph_density": 0.13911290322580644,
+          "mean_degree": 4.3125,
+          "min_degree": 2,
+          "max_degree": 6,
+          "diameter_hops": 7,
+          "mean_shortest_path_hops": 3.5423387096774195,
+          "max_base_distance": 28.10063498094191,
+          "base_degree": 4
+        }
+      },
+      {
+        "scene_id": 29,
+        "generator_seed": 20460943,
+        "difficulty": "hard",
+        "relative_path": "test/scene_seed_29.json",
+        "sha256": "92ce74cc4a280d8183af9b3f5b7f450f8297fe26985e12d818dd888391364f7b",
+        "generator_config": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "area_width": 22.0,
+          "area_height": 22.0,
+          "connection_radius": 4.25,
+          "extra_k_nearest": 1,
+          "min_base_degree": 4,
+          "base_position": [
+            1.0,
+            1.0
+          ],
+          "seed": 20460943
+        },
+        "statistics": {
+          "num_viewpoints": 32,
+          "num_samples": 80,
+          "num_edges": 50,
+          "graph_density": 0.10080645161290322,
+          "mean_degree": 3.125,
+          "min_degree": 1,
+          "max_degree": 5,
+          "diameter_hops": 12,
+          "mean_shortest_path_hops": 5.074596774193548,
+          "max_base_distance": 40.24788489651905,
+          "base_degree": 4
+        }
+      }
+    ]
+  }
+}

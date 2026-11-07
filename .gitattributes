@@ -1,0 +1,2 @@
+# Preserve the exact bytes covered by the archived SHA-256 checksums.
+scenarios/**/*.json -text
